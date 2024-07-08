@@ -1,20 +1,25 @@
 :root {
-    --charcoal: #394B61;
-    --charcoal-dark: #263241;
-    --blue-gray: #5E91C4;
-    --uranian-blue: #BCDAFA;
-    --baby-powder: #F8F7F2;
-    --flame: #eb5e28;
-    --flame-dark: #c75021;
+  --charcoal: #394B61;
+  --charcoal-dark: #263241;
+  --blue-gray: #5E91C4;
+  --uranian-blue: #BCDAFA;
+  --baby-powder: #F8F7F2;
+  --flame: #eb5e28;
+  --flame-dark: #c75021;
 }
 
 * {
-    font-family: Montserrat;
-    font-size: 13px;
+  font-family: Montserrat;
+  font-size: 13px;
 }
 
 body {
-    background-color: var(--charcoal) !important;
-    color: var(--baby-powder) !important;
-    min-height: 100vh !important;
+  background-color: var(--charcoal) !important;
+  color: var(--baby-powder) !important;
+  min-height: 100vh !important;
+}
+
+.container-fluid {
+  padding-right: calc(var(--bs-gutter-x)* 1.5) !important;
+  padding-left: calc(var(--bs-gutter-x)* 1.5) !important;
 }
