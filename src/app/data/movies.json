@@ -1,0 +1,203 @@
+{
+    "data": [{
+            "_id": "1",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-4.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "2",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-5.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "3",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-6.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "4",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-7.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "5",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-8.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "6",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-9.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "7",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-10.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "8",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-11.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "9",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-12.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "10",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-13.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "11",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-14.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "12",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-15.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "13",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-16.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "14",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-17.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "15",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-18.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "16",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-19.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "17",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-20.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "18",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-21.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "19",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-20.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        },
+        {
+            "_id": "20",
+            "name": "Inception",
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+            "duration": "2h 28m",
+            "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
+            "cover_card": "assets/movies/cover-card/movie-21.jpg",
+            "url": "https://example.com/movies/inception",
+            "classification": "PG-13"
+        }
+    ]
+}

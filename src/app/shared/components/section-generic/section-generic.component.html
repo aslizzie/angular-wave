@@ -1,0 +1,9 @@
+<div class="container">
+    <h4 class="mb-3">{{ title }}</h4>
+
+    <div class="row">
+        <ng-container *ngFor="let movie of dataMovies">
+            <app-card></app-card>
+        </ng-container>
+    </div>
+</div>

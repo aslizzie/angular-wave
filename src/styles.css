@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --charcoal: #394B61;
+    --charcoal-dark: #263241;
+    --blue-gray: #5E91C4;
+    --uranian-blue: #BCDAFA;
+    --baby-powder: #F8F7F2;
+    --flame: #eb5e28;
+    --flame-dark: #c75021;
+}
+
+* {
+    font-family: Montserrat;
+    font-size: 13px;
+}
+
+body {
+    background-color: var(--charcoal) !important;
+    color: var(--baby-powder) !important;
+    min-height: 100vh !important;
+}

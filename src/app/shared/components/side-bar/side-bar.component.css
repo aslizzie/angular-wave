@@ -1,0 +1,58 @@
+#side-bar {
+    height: 100vh;
+    background-color: var(--charcoal-dark) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-link,
+button {
+    color: var(--baby-powder) !important;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    transition: 1s !important;
+}
+
+.nav-link span,
+button span {
+    font-size: 14px !important;
+}
+
+i {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.nav-link:hover span,
+.nav-link:hover i,
+button:hover span,
+button:hover i {
+    color: var(--blue-gray);
+}
+
+.nav-link.active {
+    background-color: transparent;
+}
+
+.nav-link.active span,
+.nav-link.active i {
+    color: var(--blue-gray);
+}
+
+.card.card-body {
+    padding: 0 !important;
+    background-color: var(--charcoal) !important;
+    border-width: 2px !important;
+}
+
+.card.card-body p {
+    padding: 5px 10px !important;
+    margin-bottom: 0 !important;
+}
+
+.card.card-body p:hover {
+    background-color: var(--charcoal-dark);
+    cursor: pointer;
+}
