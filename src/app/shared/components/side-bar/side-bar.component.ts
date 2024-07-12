@@ -21,7 +21,7 @@ export class SideBarComponent implements OnInit {
       {
         name: 'Categories',
         icon: 'bi bi-grid-fill',
-        router: ['/', 'categories'],
+        router: [''],
         options: ['Acción', 'Ciencia ficcion', 'Comedia', 'Drama', 'Musical']
       },
       {

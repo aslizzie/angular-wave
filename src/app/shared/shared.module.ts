@@ -4,6 +4,8 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { SectionGenericComponent } from './components/section-generic/section-generic.component';
 import { CardComponent } from './components/card/card.component';
+import { RouterModule } from '@angular/router';
+import { ImgBrokenDirective } from './directives/img-broken.directive';
 
 
 
@@ -12,16 +14,19 @@ import { CardComponent } from './components/card/card.component';
     SideBarComponent,
     NavBarComponent,
     SectionGenericComponent,
-    CardComponent
+    CardComponent,
+    ImgBrokenDirective
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     SideBarComponent,
     NavBarComponent,
     CardComponent,
-    SectionGenericComponent
+    SectionGenericComponent,
+    ImgBrokenDirective
   ]
 })
 export class SharedModule { }
