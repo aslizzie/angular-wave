@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import * as dataRaw from '../../../../data/movies.json';
 import { MovieModel } from '@core/models/movies';
+import { MovieService } from '@modules/movies/services/movie.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-movies-page',
@@ -9,11 +10,21 @@ import { MovieModel } from '@core/models/movies';
 })
 export class MoviesPageComponent implements OnInit {
   mockMoviesList:Array<MovieModel> = []
-  constructor() { }
+
+  listObservers$:Array<Subscription> = []
+  
+  constructor(private moviesService: MovieService) { }
 
   ngOnInit(): void {
-    const {data}:any = (dataRaw as any).default
-    this.mockMoviesList = data;
+    const observer1$ = this.moviesService.dataMovies$
+    .subscribe(response => {
+      this.mockMoviesList = response
+    });
+
+    this.listObservers$ = [observer1$];
   }
 
+  ngOnDestroy(): void {
+    this.listObservers$.forEach(u => u.unsubscribe());
+  }
 }
