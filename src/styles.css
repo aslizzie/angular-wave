@@ -16,10 +16,66 @@
 body {
   background-color: var(--charcoal) !important;
   color: var(--baby-powder) !important;
-  min-height: 100vh !important;
+}
+
+.row {
+  margin: 0 !important;
 }
 
 .container-fluid {
   padding-right: calc(var(--bs-gutter-x)* 1.5) !important;
   padding-left: calc(var(--bs-gutter-x)* 1.5) !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.form-control:focus {
+  border-color: var(--flame) !important;
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background-color: var(--flame) !important;
+  border-color: var(--flame) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--flame-dark) !important;
+  border-color: var(--flame-dark) !important;
+}
+
+.btn-outline-secondary {
+  border-color: var(--uranian-blue) !important;
+  color: var(--uranian-blue) !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--uranian-blue) !important;
+  color: var(--charcoal) !important;
+}
+
+.btn-outline-info {
+  border-color: var(--blue-gray) !important;
+  color: var(--blue-gray) !important;
+}
+
+.btn-outline-info:hover {
+  background-color: var(--blue-gray) !important;
+  color: var(--charcoal) !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--flame) !important;
+  border-color: var(--flame) !important;
+}
+
+.form-check-input:focus {
+  border-color: var(--flame) !important;
+  box-shadow: none !important;
+}
+
+a {
+  color: var(--uranian-blue) !important;
 }

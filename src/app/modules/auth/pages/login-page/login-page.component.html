@@ -1,29 +1,49 @@
-<div class="form-signin d-flex align-items-center py-4 m-auto">
-  <form (ngSubmit)="sendLogin()" [formGroup]="formLogin">
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+<div class="container-fluid vh-100">
+  <div class="row w-100 h-100">
+    <div class="d-none d-sm-flex col-sm-4 col-md-6 col-lg-8 col-xl-9 col-xxl-10">
+      <div id="div-login" class="position-relative m-5">
+        <img class="logo-login position-absolute bottom-0 start-0 d-none d-md-flex m-5 "
+          src="../../../../../assets/logo-no-background.png" alt="wave">
+      </div>
+    </div>
+    <div
+      class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 col-xxl-2 ps-sm-0 p-5 d-flex flex-column justify-content-center form-signin">
+      <form (ngSubmit)="sendLogin()" [formGroup]="formLogin">
+        <h4 class="text-center mb-5">Welcome!</h4>
 
-    <div class="form-floating">
-      <input formControlName="email" type="email" class="form-control" id="floatingInput"
-        placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
-    <div class="form-floating">
-      <input formControlName="password" type="password" class="form-control" id="floatingPassword"
-        placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
+        <label for="inputEmail" class="form-label mb-1">Email</label>
+        <input formControlName="email" type="email" class="form-control mb-3" id="inputEmail" required>
 
-    <div class="form-check text-start my-3">
-      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Remember me
-      </label>
+        <label for="inputPassword" class="form-label mb-1">Contraseña</label>
+        <input formControlName="password" type="password" class="form-control mb-3" id="inputPassword" required>
+
+        <div class="mb-5 d-flex justify-content-between flex-wrap">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Remember me
+            </label>
+          </div>
+
+          <a href=""> ¿Forgot password? </a>
+        </div>
+
+        <!-- <div *ngIf="errorSession">
+        <p> :( </p>
+      </div> -->
+        <button class="btn btn-primary w-100" type="submit">Sign in</button>
+      </form>
+
+      <hr class="my-5">
+
+      <button type="button" class="btn btn-outline-secondary w-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google"
+          viewBox="0 0 16 16">
+          <path
+            d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+        </svg>
+        Iniciar sesión con Google
+      </button>
     </div>
-    <div *ngIf="errorSession">
-      <p> :( </p>
-    </div>
-    <button [disabled]="formLogin.invalid" class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
-  </form>
+  </div>
 </div>

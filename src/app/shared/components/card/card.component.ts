@@ -8,14 +8,7 @@ import { SerieModel } from '@core/models/series';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  @Input() item: MovieModel | SerieModel = {
-    _id: '',
-    name: '',
-    description: '',
-    cover_card: '',
-    cover_carrousel: '',
-    url: '',
-    classification: ''
+  @Input() item: any = {
   };
   constructor() { }
 

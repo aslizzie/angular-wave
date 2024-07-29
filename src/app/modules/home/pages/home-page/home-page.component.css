@@ -1,5 +1,11 @@
 .home-wrapper {
-  margin-top: 80px;
-  margin-left: 200px;
-  min-height: 100vh;
+  margin-top: 65px;
+  margin-bottom: 20px;
+  height: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .home-wrapper {
+    margin-left: 200px;
+  }
 }

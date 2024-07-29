@@ -1,5 +1,5 @@
 <div class="card-cover">
-  <a href="http://">
-    <img appImgBroken src="{{ item.cover_card }}" alt="">
+  <a [routerLink]="item.movie_id ? '/movies/' + item.content_id : '/series/' + item.content_id">
+    <img [src]="'http://localhost:3000/' + item.banner_image" alt="{{ item.title }}">
   </a>
 </div>

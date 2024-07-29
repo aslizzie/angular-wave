@@ -6,6 +6,7 @@ import { SectionGenericComponent } from './components/section-generic/section-ge
 import { CardComponent } from './components/card/card.component';
 import { RouterModule } from '@angular/router';
 import { ImgBrokenDirective } from './directives/img-broken.directive';
+import { CardHeroComponent } from './components/card-hero/card-hero.component';
 
 
 
@@ -15,7 +16,8 @@ import { ImgBrokenDirective } from './directives/img-broken.directive';
     NavBarComponent,
     SectionGenericComponent,
     CardComponent,
-    ImgBrokenDirective
+    ImgBrokenDirective,
+    CardHeroComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { ImgBrokenDirective } from './directives/img-broken.directive';
     NavBarComponent,
     CardComponent,
     SectionGenericComponent,
-    ImgBrokenDirective
+    ImgBrokenDirective,
+    CardHeroComponent
   ]
 })
 export class SharedModule { }

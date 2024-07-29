@@ -9,19 +9,17 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./movies-page.component.css']
 })
 export class MoviesPageComponent implements OnInit {
-  mockMoviesList:Array<MovieModel> = []
+  mockMoviesList:Array<any> = []
 
   listObservers$:Array<Subscription> = []
   
   constructor(private moviesService: MovieService) { }
 
   ngOnInit(): void {
-    const observer1$ = this.moviesService.dataMovies$
+    this.moviesService.getAllMovies$()
     .subscribe(response => {
-      this.mockMoviesList = response
-    });
-
-    this.listObservers$ = [observer1$];
+      this.mockMoviesList = response;
+    })
   }
 
   ngOnDestroy(): void {

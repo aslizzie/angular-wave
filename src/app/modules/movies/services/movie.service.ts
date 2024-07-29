@@ -1,17 +1,20 @@
 import { Injectable } from '@angular/core';
-import { MovieModel } from '@core/models/movies';
-import { Observable, of } from 'rxjs';
-import * as dataRaw from '../../../data/movies.json';
+import { HttpClient } from '@angular/common/http';
+import { Observable} from 'rxjs';
+import { environment } from 'src/environments/environment';
+/* import * as dataRaw from '../../../data/movies.json'; */
 
 @Injectable({
   providedIn: 'root'
 })
 export class MovieService {
+  private readonly URL = environment.api;
 
-  dataMovies$:Observable<MovieModel[]> = of([])
-
-  constructor() { 
-    const { data }:any = (dataRaw as any).default;
-    this.dataMovies$ = of(data)
+  constructor(private http: HttpClient) { 
+    
+  }
+  
+  getAllMovies$():Observable<any> {
+    return this.http.get(`${this.URL}/contents/movies`)
   }
 }

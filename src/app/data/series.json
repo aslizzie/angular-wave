@@ -4,7 +4,7 @@
             "name": "Inception",
             "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
             "cover_carrousel": "https://example.com/images/inception_carrousel.jpg",
-            "cover_card": "_assets/series/cover-card/serie-1.jpg",
+            "cover_card": "assets/series/cover-card/serie-1.jpg",
             "url": "https://example.com/movies/inception",
             "classification": "PG-13"
         }

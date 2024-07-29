@@ -1,0 +1,15 @@
+.div-error {
+    height: calc(100vh - (5rem + 80px));
+}
+
+.img-error {
+    object-fit: contain;
+    width: 350px;
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    .img-error {
+        width: 450px;
+    }
+}

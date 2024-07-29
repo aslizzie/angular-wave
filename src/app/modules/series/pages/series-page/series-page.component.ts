@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import * as dataRaw from '../../../../data/series.json';
 import { SerieModel } from '@core/models/series';
+import { Subscription } from 'rxjs';
+import { SerieService } from '@modules/series/services/serie.service';
 
 @Component({
   selector: 'app-series-page',
@@ -8,11 +9,20 @@ import { SerieModel } from '@core/models/series';
   styleUrls: ['./series-page.component.css']
 })
 export class SeriesPageComponent implements OnInit {
-  mockSeriesList:Array<SerieModel> = []
-  constructor() { }
+  mockSeriesList:Array<any> = []
+
+  listObservers$:Array<Subscription> = []
+  
+  constructor(private seriesService: SerieService) { }
 
   ngOnInit(): void {
-    const {data}:any = (dataRaw as any).default
-    this.mockSeriesList = data;
+    this.seriesService.getAllSeries$()
+    .subscribe(response => {
+      this.mockSeriesList = response;
+    })
+  }
+
+  ngOnDestroy(): void {
+    this.listObservers$.forEach(u => u.unsubscribe());
   }
 }

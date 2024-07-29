@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center align-items-center flex-column div-error p-4" *ngIf="errorMessage">
+    <img class="img-error" src="../../../../../assets/error404.png" alt="" srcset="">
+    <p class="text-center fs-5">Oops! Parece que esta película no está disponible. <a class="fs-5"
+            routerLink="/movies">Regresa al
+            inicio</a> y
+        prueba con otra búsqueda.
+    </p>
+</div>
+
+<div *ngIf="serie">
+    <app-card-hero [item]="serie"></app-card-hero>
+    <div class="container mt-5">
+        <h4>Synopsis</h4>
+        <p>{{ serie.description }}</p>
+    </div>
+</div>

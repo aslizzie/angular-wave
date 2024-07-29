@@ -1,0 +1,12 @@
+#div-login {
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(57, 75, 97, 0.80), rgba(57, 75, 97, 0.80)),
+        url('src/assets/background-login.jpg');
+    width: 100%;
+    border-radius: 16px;
+}
+
+.logo-login {
+    height: 30px;
+    width: auto;
+}
