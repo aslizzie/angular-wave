@@ -18,6 +18,7 @@ export class SeriesPageComponent implements OnInit {
   ngOnInit(): void {
     this.seriesService.getAllSeries$()
     .subscribe(response => {
+      console.log(response)
       this.mockSeriesList = response;
     })
   }

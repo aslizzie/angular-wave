@@ -1,5 +1,14 @@
 <div class="card-cover">
-  <a [routerLink]="item.movie_id ? '/movies/' + item.content_id : '/series/' + item.content_id">
-    <img [src]="'http://localhost:3000/' + item.banner_image" alt="{{ item.title }}">
+  <!-- <a
+    [routerLink]="item.banner_image.includes('movies') || item.movieId ? '/movies/' + item.content_id : '/series/' + item.content_id"> -->
+  <a [routerLink]="item.banner_image 
+  ? (item.banner_image.includes('movies') 
+    ? '/movies/' + item.content_id 
+    : '/series/' + item.content_id)
+  : (item.movieId 
+    ? '/movies/' + item.movieId 
+    : '/series/' + item.contentId)">
+    <img [src]="item.banner ? 'http://localhost:5149/' + item.banner : 'http://localhost:5149/' + item.banner_image"
+      alt="{{ item.title }}">
   </a>
 </div>

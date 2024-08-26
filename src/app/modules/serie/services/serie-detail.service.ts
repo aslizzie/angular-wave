@@ -14,6 +14,6 @@ export class SerieDetailService {
   }
   
   getSerieById(id: number): Observable<any> {
-    return this.http.get<any>(`${this.URL}/contents/series/${id}`);
+    return this.http.get<any>(`${this.URL}/series/${id}`);
   }
 }

@@ -8,7 +8,7 @@
 </div>
 
 <div *ngIf="serie">
-    <app-card-hero [item]="serie"></app-card-hero>
+    <app-card-hero [item]="serie" [userId]="userId" [itemId]="itemId"></app-card-hero>
     <div class="container mt-5">
         <h4>Synopsis</h4>
         <p>{{ serie.description }}</p>

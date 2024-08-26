@@ -18,6 +18,7 @@ export class MoviesPageComponent implements OnInit {
   ngOnInit(): void {
     this.moviesService.getAllMovies$()
     .subscribe(response => {
+      console.log(response)
       this.mockMoviesList = response;
     })
   }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AuthService } from '@modules/auth/services/auth.service';
 import { MovieDetailService } from '@modules/movie/services/movie-detail.service';
 import { SerieDetailService } from '@modules/serie/services/serie-detail.service';
 
@@ -11,10 +12,13 @@ import { SerieDetailService } from '@modules/serie/services/serie-detail.service
 export class SerieDetailComponent implements OnInit {
   serie: any;
   errorMessage: string = '';
+  userId: any;
+  itemId: any;
 
   constructor(
     private route: ActivatedRoute,
-    private movieDetailService: SerieDetailService
+    private movieDetailService: SerieDetailService,
+    private authService: AuthService
   ) {}
 
   ngOnInit() {
@@ -24,8 +28,11 @@ export class SerieDetailComponent implements OnInit {
 
       this.movieDetailService.getSerieById(serieId).subscribe(
         data => {
+        /*   console.log( this.itemId = data.contentId); */
           this.serie = data;
           this.errorMessage = '';
+          this.userId = this.authService.getUserId();
+          this.itemId = data.contentId;
         },
         error => {
           this.errorMessage = error.error.message || 'Ocurrió un error inesperado';

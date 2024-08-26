@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '@modules/auth/services/auth.service';
+import { FavoritesPageService } from '@modules/favorites/services/favorites-page.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-favorites-page',
@@ -6,10 +9,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./favorites-page.component.css']
 })
 export class FavoritesPageComponent implements OnInit {
+  mockFavoritesList:Array<any> = []
 
-  constructor() { }
+  listObservers$:Array<Subscription> = []
+
+  constructor(private favoritesService: FavoritesPageService, private authService: AuthService) { }
 
   ngOnInit(): void {
+    const userId = this.authService.getUserId();
+
+    if (userId !== null) {
+      this.favoritesService.getFavorites$(userId)
+      .subscribe(response => {
+        console.log(response)
+        this.mockFavoritesList = response;
+      })
+    } else {
+      console.error('User ID is null');
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.listObservers$.forEach(u => u.unsubscribe());
   }
 
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -14,6 +15,8 @@ export class SerieService {
   }
   
   getAllSeries$():Observable<any> {
-    return this.http.get(`${this.URL}/contents/series`)
+    return this.http.get(`${this.URL}/series`).pipe(
+      map((response: any) => response.$values || [])
+    );
   }
 }

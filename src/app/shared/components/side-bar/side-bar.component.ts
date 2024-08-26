@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '@modules/auth/services/auth.service';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
   mainMenu: Array<any> = []
+  username: string | null = '';
 
-  constructor() { }
+  constructor(private authService:AuthService) { }
 
   ngOnInit(): void {
     this.mainMenu = [
@@ -31,6 +33,12 @@ export class SideBarComponent implements OnInit {
         options: ''
       }
     ]
+
+    this.username = localStorage.getItem('username');
+  }
+
+  onLogout(): void {
+    this.authService.logout();
   }
 
 }

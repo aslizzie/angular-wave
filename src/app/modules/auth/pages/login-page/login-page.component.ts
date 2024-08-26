@@ -10,39 +10,26 @@ import { CookieService } from 'ngx-cookie-service';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent implements OnInit {
-  errorSession:boolean = false
-  formLogin: FormGroup = new FormGroup({});
+  username: string = '';
+  password: string = '';
+  errorMessage: string = '';
 
-  constructor(private authService: AuthService, private cookie: CookieService, private router: Router) { }
+  constructor(private authService: AuthService, private router: Router) { }
 
-  ngOnInit(): void {
-    this.formLogin = new FormGroup(
-      {
-        email: new FormControl('', [
-          Validators.required,
-          Validators.email
-        ]),
-        password: new FormControl('', [
-          Validators.required,
-          Validators.minLength(6),
-          Validators.maxLength(12)
-        ])
+  ngOnInit(): void {}
+
+  login() {
+    this.authService.login(this.username, this.password).subscribe(
+      response => {
+     /*    localStorage.setItem('user', JSON.stringify(response)); */
+        localStorage.setItem('username', response.data);
+        localStorage.setItem('userId', response.userId);
+        this.router.navigate(['/movies']);
+      },
+      error => {
+        this.errorMessage = "Login failed. Please check your credentials and try again.";
       }
     );
   }
-
-  sendLogin(): void {
-    const {email, password} = this.formLogin.value
-    this.authService.sendCredentials(email, password)
-    .subscribe(responseOk => {
-      console.log(":)")
-      const { tokenSession, data } = responseOk
-      this.cookie.set('token', tokenSession, 4, '/')
-      this.router.navigate(['/', 'movies'])
-    }, 
-    err => {
-      this.errorSession = true
-      console.log(":(")
-    })
-  }
 }
+
